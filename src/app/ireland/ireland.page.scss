@@ -1,0 +1,10 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+
+//background image for home page
+ion-content {
+    //--background: url(../../assets/img/ireland.jpg);
+    background-image: url("/assets/img/BackImage.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }

@@ -1,0 +1,47 @@
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>Rate the App</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+
+          <ion-radio-group [(ngModel)]="myRate">
+            <ion-item>
+              <ion-label>
+                <ion-icon name="thumbs-up-outline">Good</ion-icon>
+              </ion-label>
+              <!-- if users picked this it will be stored in storage -->
+              <ion-radio value="Good"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>
+                <ion-icon name="thumbs-down-outline">Bad</ion-icon>
+              </ion-label>
+              <!-- if users picked this it will be stored in storage -->
+              <ion-radio value="Bad"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="success" (click)="onSave()">Send</ion-button>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <!-- this will output a message which shows your choice -->
+      <ion-col>Your rating is: {{myRate}}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
